@@ -1,8 +1,10 @@
-## Configure Buildpack
+## Configure Buildpacks
 
-To install [Siege](http://www.joedog.org/siege-home/), configure Heroku to download the [siege-dyno buildpack](https://github.com/jcpenney/siege-dyno) with the following command:
+Configure Heroku to use the [buildpack-multi](To install [Siege](http://www.joedog.org/siege-home/) with the following command:
 	
-	heroku config:set BUILDPACK_URL=https://github.com/jcpenney/siege-dyno
+	heroku config:set BUILDPACK_URL=http://www.joedog.org/siege-home/
+
+Then, to install [Siege](http://www.joedog.org/siege-home/), be sure that the [siege-dyno buildpack](https://github.com/jcpenney/siege-dyno) is specified in `.buildpacks`.
 	
 ## Run Siege
 
